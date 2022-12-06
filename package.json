@@ -16,7 +16,7 @@
     "release:vfm": "pnpm --filter vue-final-modal release",
     "lint": "eslint . --ext=.ts,.vue --fix",
     "typecheck": "pnpm --parallel typecheck",
-    "postinstall": "pnpm prepare:vfm"
+    "postinstall": "npm i && cd packages/vue-final-modal && npm i && cd ../.. && npm run prepare:vfm"
   },
   "dependencies": {
     "vue": "^3.2.41"
